@@ -1,0 +1,242 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid ">
+    <a class="navbar-brand href="#" style="font-family: Epunda Slab, serif; font-optical-sizing: auto;font-weight: 800;font-style: italic;
+ ">NOTION-X</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar -->
+
+
+    <div class="collapse navbar-collapse"  id="navbarNav">
+      <ul class="navbar-nav mx-auto d-flex gap-5 fs-5">
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Branches
+          </a>
+          <ul class="dropdown-menu">
+         <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ee' %}">EE</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">1st Year</a></li>
+        <li><a class="dropdown-item" href="#">2nd Year</a></li>
+        <li><a class="dropdown-item" href="#">3rd Year</a></li>
+
+      </ul>
+    </li>
+
+    <!-- CSE -->
+               <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'cse' %}">CSE</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">1st Year</a></li>
+        <li><a class="dropdown-item" href="#">2nd Year</a></li>
+        <li><a class="dropdown-item" href="#">3rd Year</a></li>
+
+      </ul>
+    </li>
+
+    <!-- ECE -->
+               <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ee' %}">ECE</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">1st Year</a></li>
+        <li><a class="dropdown-item" href="#">2nd Year</a></li>
+        <li><a class="dropdown-item" href="#">3rd Year</a></li>
+
+      </ul>
+    </li>
+
+    <!-- CIVIL -->
+
+
+       <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ee' %}">Civil</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">1st Year</a></li>
+        <li><a class="dropdown-item" href="#">2nd Year</a></li>
+        <li><a class="dropdown-item" href="#">3rd Year</a></li>
+
+      </ul>
+    </li>
+
+    <!-- FD -->
+
+       <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ee' %}">Fashion Designing</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">1st Year</a></li>
+        <li><a class="dropdown-item" href="#">2nd Year</a></li>
+        <li><a class="dropdown-item" href="#">3rd Year</a></li>
+
+      </ul>
+    </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+   
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/computer.jpg' %}" class="d-block w-100 vh-100" style="object-fit: cover;filter: brightness(50%);" alt="...">
+<div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="text-center" style="font-size: 62px;">Computer Science Engineering</h1>
+        <h5>Innovating the future through code and technology.</h5>
+      </div>
+    </div>
+
+    
+  </div>
+
+ 
+</div>
+
+<div class="container d-flex border rounded flex-column justify-content-center align-items-center mt-4 "    style="transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; background-color: #f0ebed;"
+     onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.3)'; this.style.transform='translateY(-5px)';"
+     onmouseout="this.style.boxShadow=''; this.style.transform='';">
+
+  <div id="stepperForm" class="d-flex flex-column justify-content-center align-items-center mt-3 ">
+    <div id="step1" class="step">
+    <h3>Select Semester</h3>
+    <form method="post" action="{% url 'get_files' %}">
+  {% csrf_token %}
+    <select name="semester" id="semester" class="form-select w-100 dropend" onchange="loadSubjects(this.value)" >
+
+         <option value="">-- Select Semester --</option>
+        <option value="1">Semester 1</option>
+        <option value="2">Semester 2</option>
+        <option value="3">Semester 3</option>
+        <option value="4">Semester 4</option>
+        <option value="5">Semester 5</option>
+        <option value="6">Semester 6</option>
+        <option value="7">Semester 7</option>
+        <option value="8">Semester 8</option>
+    </select>
+<button type="button" class="btn btn-primary mt-3 w-75 mb-5" onclick="nextStep(2)">Next</button>
+</div>
+
+ <div id="step2" class="step d-none">
+      <h3>Select Subject</h3>
+<select name="subject" id="subject" class="form-select w-100">
+        <option value="">-- Select Branch --</option>
+        <!-- Dynamically filled via Django or JS -->
+      </select>
+      <br>
+<button type="button" class="btn btn-secondary mt-3" onclick="prevStep(1)">Back</button>
+<button type="button" class="btn btn-success mt-3" onclick="nextStep(3)">Next</button>
+
+
+    </div>
+
+
+       <!-- Step 3: Resource -->
+    <div id="step3" class="step d-none">
+      <h3>Select Resource Type</h3>
+      <div class="btn-group">
+        <input type="radio" class="btn-check" name="resource" id="notes" value="NOTES" autocomplete="off">
+        <label class="btn btn-outline-primary" for="notes">Notes</label>
+
+        <input type="radio" class="btn-check" name="resource" id="assignment" value="ASSIGNMENT" autocomplete="off">
+        <label class="btn btn-outline-primary" for="assignment">Assignment</label>
+
+        <input type="radio" class="btn-check" name="resource" id="practical" value="PRACTICAL" autocomplete="off">
+        <label class="btn btn-outline-primary" for="practical">Practical</label>
+      </div>
+      <br>
+<button type="button" class="btn btn-secondary mt-3" onclick="prevStep(2)">Back</button>
+      <button type="submit" class="btn btn-success mt-3" onclick="submitForm(event)">Submit</button>
+    </div>
+      <div id="result" class="step d-none">
+      <h3>Results</h3>
+      <div id="resultContent" class="row"></div>
+      <button type ="button" class="btn btn-warning mt-3" onclick="prevStep(3)">Go Back</button>
+      </form>
+    </div>
+  </div>
+</div>
+  </div>
+  
+</div>
+
+ <!-- <ul>
+    {% for pdf in Csefiles %}
+        <li>
+            {{ pdf.title }}
+            <a href="{{ pdf.file.url }}" target="_blank">View</a>
+        </li>
+    {% endfor %}
+</ul> -->
+<script>
+  function nextStep(step){
+    document.querySelectorAll('.step').forEach(s=>s.classList.add("d-none"));
+    document.getElementById("step" + step).classList.remove("d-none");
+
+  }
+  function prevStep(step){
+    nextStep(step)
+  }
+
+  function submitForm(event){
+    const semester = document.getElementById("semester").value
+    const subject = document.getElementById('subject').value
+    const resources = document.querySelector(`input[name="resource"]:checked`)?.value;
+    if(!semester || ! subject || !resources){
+      alert("Please Complete all steps");
+      event.preventDefault();   // stop form submit
+      return false;
+    }
+    
+    
+  }
+function loadSubjects(semester){
+      fetch(`/get-subjects/${semester}/`)  // semester goes into the URL
+    .then(response => response.json())
+    .then(data => {
+        let subjectSelect = document.getElementById("subject");
+        subjectSelect.innerHTML = "<option value=''>-- Select Subject --</option>";
+
+        data.forEach(sub => {
+            subjectSelect.innerHTML += `<option value="${sub}">${sub}</option>`;
+        });
+    });
+ 
+
+
+
+}
+</script>
+</body>
+</html>
