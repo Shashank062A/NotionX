@@ -2,17 +2,15 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from fileuploads.models import UploadeFiles
 from django.http import JsonResponse
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from User.models import QuestionPaper, Purchase
+import uuid   # for transaction IDs
+
 def home (request):
     return render(request, 'home.html')
 def branch (request):
     return render(request, 'ee.html')
-def pdf(request):
-    files = UploadeFiles.objects.all()
-    context = {
-        'files': files,
-    }
-    return render(request, 'pdf.html', context)
-
 def CseNotes(request):
     Csefiles = UploadeFiles.objects.filter(branch="CSE", category="NOTES")
     context = {
@@ -42,3 +40,36 @@ def getSubjects (request, semester):
         .distinct()
      )
     return JsonResponse(list(subject), safe=False)
+
+# def SelectSemester (request):
+#     if request.method == "POST":
+#         branch = request.POST.get("branch")
+#         semester = request.POST.get("semester")
+#         request.session["branch"] = branch
+#         request.session["semester"] = semester
+#         return redirect ("show_Packages")
+#     return render(request, 'selectSemester.html')
+
+# # Show 3 packages
+# def show_Packages(request):
+#     branch = request.session.get("branch")
+#     semester = request.session.get("semester")
+#     return render(request, 'packages.html', {"branch": branch, "semester": semester})
+
+# # Step 3: Checkout Page
+# @login_required
+# def checkout(request, package):
+#     branch = request.session.get("branch")
+#     semester = request.session.get("semester")
+#     price_map = {
+#         "single": 3 * 100,     # ₹3 → in paise
+#         "subject": 15 * 100,   # ₹15
+#         "semester": 50 * 100   # ₹50
+#     }
+    
+#     if request.method == 'POST':
+#         subject = request.POST.get("subject") if package in ["single", "subject"] else None
+        
+        # Create Razorpay client
+
+        

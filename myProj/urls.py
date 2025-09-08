@@ -22,7 +22,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', views.home, name='home'),
-    path ('branch/', views.pdf, name='ee'),
     path ('cse/', views.CseNotes, name='cse'),
     path ('get_files/', views.getFiles, name = 'get_files'),
     path('get-subjects/<str:semester>/', views.getSubjects, name='get_subjects'),
