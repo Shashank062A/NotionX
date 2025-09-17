@@ -17,6 +17,13 @@ def CseNotes(request):
      'Csefiles': Csefiles,   
     }
     return render(request, "cse.html", context)
+
+def EeNotes(request):
+    Eefiles = UploadeFiles.objects.filter(branch="EE", category="NOTES")
+    context = {
+     'Eefiles': Eefiles,   
+    }
+    return render(request, "cse.html", context)
 def getFiles (request):
     if request.method == "POST":
         semester = request.POST.get("semester")

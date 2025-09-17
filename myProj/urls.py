@@ -23,7 +23,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', views.home, name='home'),
     path ('cse/', views.CseNotes, name='cse'),
+     path ('ee/', views.EeNotes, name='ee'),
     path ('get_files/', views.getFiles, name = 'get_files'),
     path('get-subjects/<str:semester>/', views.getSubjects, name='get_subjects'),
 
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+

@@ -1,0 +1,35 @@
+/* hover shadow for branch boxes */
+/* Show dropdown on hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0; /* prevents dropdown jumping */
+}
+
+/* Submenu positioning */
+.dropdown-submenu {
+    position: relative;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+}
+
+.card-img-top {
+  height: 100px;        /* fixed height for uniformity */
+  object-fit: cover;    /* maintain aspect ratio */
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
