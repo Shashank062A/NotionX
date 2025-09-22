@@ -1,0 +1,487 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid ">
+    <a class="navbar-brand href="#" style="font-family: Epunda Slab, serif; font-optical-sizing: auto;font-weight: 800;font-style: italic;
+ ">NOTION-X</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar -->
+
+
+    <div class="collapse navbar-collapse"  id="navbarNav">
+      <ul class="navbar-nav mx-auto d-flex gap-5 fs-5">
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Branches
+          </a>
+          <ul class="dropdown-menu">
+         <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ee' %}">Electronics Engineering</a>
+   
+    </li>
+
+     <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'me' %}">Mechanical Engineering</a>
+   
+    </li>
+
+    <!-- CSE -->
+               <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'cse' %}">Computer Science Engineering</a>
+  
+    </li>
+
+    <!-- ECE -->
+               <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ece' %}">Electronics & Communication Engineering</a>
+     
+    </li>
+
+    <!-- CIVIL -->
+
+
+       <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'civil' %}">Civil Engineering</a>
+   
+    </li>
+
+    <!-- FD -->
+
+       <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'fd' %}">Fashion Designing</a>
+    </li>
+      
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+   
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/cb.jpg' %}" class="d-block w-100 vh-100" style="object-fit: cover;filter: brightness(50%);" alt="...">
+<div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="text-center" style="font-size: 62px;">Fashion Designing</h1>
+        <h5>Designing the world we live in.</h5>
+      </div>
+    </div>
+
+    
+  </div>
+
+ 
+</div>
+
+
+<div class="container d-flex border rounded flex-column justify-content-center align-items-center mt-4">
+  <div class="topic">
+    <h1 style="font-style: Roboto Condensed, sans-serif; font-weight: 700; color: rgb(32, 128, 207);">What is Civil Engineering?</h1>
+  </div>
+<p class="text-start " style="font-size: 22px; margin-top: 12px;">Civil engineering, the profession of designing and executing structural works that serve the general public, such as dams, bridges,<br> aqueducts, canals, highways, power plants, sewerage systems, and other infrastructure.From earliest times, however, engineers have engaged in peaceful activities, and many of the civil engineering works of ancient and medieval times—such as the Roman public baths, roads, bridges, and aqueducts; the Flemish canals; the Dutch sea defenses; the French Gothic cathedrals; and many other monuments—reveal a history of inventive genius and persistent experimentation.</p>
+
+   <h1 style="font-style: Roboto Condensed, sans-serif; font-weight: 700; color: rgb(32, 128, 207);"> Some Career options in Civil Engineering</h1>
+  </div>
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> <i class="fa-solid fa-building"></i> Structural engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Structural engineers are the ones who design and analyze the structures. Therefore, they get the correct information about the safety and stability of the structures. This career path demands strong mathematics and physics knowledge, as well as excellent problem-solving skills.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"><i class="fas fa-leaf"></i> Environmental engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">As society becomes more environmentally aware, the responsibilities of an environmental engineer have gained more value. Environmental engineers work on projects that focus on enhancing environmental quality, like air pollution control, waste management, water, and sustainable growth</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"><i class="fas fa-road"></i> Transportation engineering</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Transportation is an important part of modern society, and transportation engineers play an important role in designing and maintaining the best transport systems.Transportation engineers need outstanding analytical knowledge and a good understanding of traffic flow, safety regulations, and transportation technology.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> <i class="fas fa-city"></i> Urban planner</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Urban planning is a great career choice for those interested in shaping the growth of cities and communities. Urban planners work on building effective functional and attractive, pleasing urban spaces. They collaborate with government organizations and the public to design and implement urban plans.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"><i class="fas fa-mountain"></i> Geotechnical Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Geotechnical engineering is the best choice. Geotechnical engineers use soil and rock mechanics as the basis of their design for structures such as foundations, retaining walls, and others. Apart from that, they ensure that all parts are stable under any type of situation, including difficult areas. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> <i class="fas fa-hard-hat"></i> Construction Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Construction engineers are crucial in planning and designing the construction projects. They closely collaborate with designers, contractors, and other participants to guarantee that the projects are implemented successfully.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+
+
+
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> <i class="fas fa-clipboard-check"></i> Construction Manager   </h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Construction managers are professionals who oversee and direct construction activities in a building or structure project. They are responsible for creating cost estimates, work timetables, and devising budgets.  
+Construction managers also comply with state and federal legal requirements including business and safety codes. It is one of the finest careers after civil engineering.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> <i class="fa-solid fa-fire"></i> Fire Engineer
+</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">><i class="fas fa-drafting-compass"></i> Site Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Site Engineers oversee construction progress, ensuring that the project follows the design and stay on schedule.While the role is traditionally hands-on with little to no technology involvement, incorporation of BIM workflows has opened up a whole new array of jobs on site.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+
+
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> <i class="fas fa-tools"></i> Consulting Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Consulting engineers work to oversee and formulate plans and strategies for improving the performance of buildings or structures. These professionals are specialized in project design, coordination, and analysis.  
+
+Consulting engineers provide insights for innovative and effective design strategies for private or public infrastructure projects. Consulting engineer is a great choice for a civil engineering career.  </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"><i class="fas fa-drafting-compass"></i> Nuclear Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Nuclear engineers are professionals who are responsible for researching new uses and management of nuclear power or materials. They design and develop nuclear equipment like radiation shielding and reactor cores.  
+
+Nuclear engineers are responsible for examining nuclear accidents and analyzing data for designing prevention strategies. This is a highly demanding job after civil engineering. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"><i class="fa-solid fa-square-poll-vertical"></i> Surveyor</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Surveyors measure and note property boundaries and locations to determine building site specifications. The surveyor researches records or land titles to verify the accuracy of the data and present their findings to designated authorities. Surveyors prepare maps or plots to establish water or land boundaries in regards to deeds, leases and other legal documents.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+</div>
+
+<!-- Resources Section -->
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h1 class="fw-bold" style="font-family: 'Roboto Condensed', sans-serif; color: #2080cf; font-size: 2.5rem;">
+      Resources
+    </h1>
+    <p class="text-muted fs-5">Select your semester, subject, and resource type to access study materials</p>
+  </div>
+
+  <div class="card shadow-lg p-4" style="border-radius: 15px; background-color: #f8f9fa; transition: transform 0.3s, box-shadow 0.3s;" 
+       onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.2)'; this.style.transform='translateY(-5px)';" 
+       onmouseout="this.style.boxShadow=''; this.style.transform='';">
+    
+    <div id="stepperForm" class="d-flex flex-column gap-4">
+
+      <!-- Step 1: Semester -->
+      <div id="step1" class="step">
+        <h3 class="mb-3 fw-semibold">1. Select Semester</h3>
+        <form method="post" action="{% url 'get_files' %}">
+          {% csrf_token %}
+          <select name="semester" id="semester" class="form-select form-select-lg mb-3" onchange="loadSubjects(this.value)">
+            <option value="">-- Select Semester --</option>
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+          </select>
+          <button type="button" class="btn btn-primary w-50 mt-2" onclick="nextStep(2)">Next</button>
+      </div>
+
+      <!-- Step 2: Subject -->
+      <div id="step2" class="step d-none">
+        <h3 class="mb-3 fw-semibold">2. Select Subject</h3>
+        <select name="subject" id="subject" class="form-select form-select-lg mb-3">
+          <option value="">-- Select Subject --</option>
+        </select>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-secondary" onclick="prevStep(1)">Back</button>
+          <button type="button" class="btn btn-success" onclick="nextStep(3)">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Resource Type -->
+<div id="step3" class="step d-none">
+  <h3 class="mb-3 fw-semibold">3. Select Resource Type</h3>
+
+  <div class="d-flex gap-3 justify-content-center mb-3">
+    <div class="form-check form-check-inline">
+      <input type="radio" class="btn-check" name="resource" id="notes" value="NOTES" autocomplete="off" required>
+      <label class="btn btn-outline-primary" for="notes">Notes</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" class="btn-check" name="resource" id="assignment" value="ASSIGNMENT" autocomplete="off">
+      <label class="btn btn-outline-primary" for="assignment">Assignment</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" class="btn-check" name="resource" id="practical" value="PRACTICAL" autocomplete="off">
+      <label class="btn btn-outline-primary" for="practical">Practical</label>
+    </div>
+  </div>
+
+  <div class="d-flex gap-2 justify-content-center">
+    <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Back</button>
+    <button type="submit" class="btn btn-success" onclick="submitForm(event)">Submit</button>
+  </div>
+</div>
+
+
+      <!-- Step 4: Results -->
+      <div id="result" class="step d-none">
+        <h3 class="mb-3 fw-semibold">Results</h3>
+        <div id="resultContent" class="row"></div>
+        <button type="button" class="btn btn-warning mt-3" onclick="prevStep(3)">Go Back</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer style="background: #0b3d2e; color: #d4f1e0; padding: 3rem 2rem; font-family: 'Epunda Slab', serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+
+    <!-- Logo + Description -->
+    <div style="flex: 1 1 250px;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem; color: #f5f5f5;">NOTION-X</h2>
+      <p style="color: #d4f1e0; line-height: 1.6;">
+        Your all-in-one academic platform helping students learn smarter, complete assignments faster, and organize study resources effortlessly.
+      </p>
+      <!-- Social icons -->
+      <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Key Features / Highlights -->
+    <div style="flex: 1 1 250px;">
+      <h4 style="margin-bottom: 1rem; font-weight: 700;">Why Choose Notion-X?</h4>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li>📚 Curated Study Material</li>
+        <li>⚡ AI-assisted Learning</li>
+        <li>📝 Assignment Guidance</li>
+        <li>🧠 Smarter Study Tools</li>
+        <li>🌐 Community Support</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex: 1 1 250px;">
+      <h4 style="margin-bottom: 1rem; font-weight: 700;">Contact & Support</h4>
+      <p style="color: #d4f1e0; line-height: 1.6; margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> support@notionx.com</p>
+      <p style="color: #d4f1e0; line-height: 1.6; margin-bottom: 0.5rem;"><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p style="color: #d4f1e0; line-height: 1.6;"><i class="fas fa-map-marker-alt"></i> 123 Learning St, Knowledge City, India</p>
+    </div>
+
+  </div>
+
+  <!-- Footer bottom -->
+  <div style="margin-top: 2rem; border-top: 1px solid #1a5a42; padding-top: 1rem; text-align: center; font-size: 0.9rem; color: #b9e2d1;">
+    &copy; 2025 Notion-X. All Rights Reserved. Designed with ❤️ for students.
+  </div>
+</footer>
+
+<!-- Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+  function nextStep(step){
+    document.querySelectorAll('.step').forEach(s=>s.classList.add("d-none"));
+    document.getElementById("step" + step).classList.remove("d-none");
+
+  }
+  function prevStep(step){
+    nextStep(step)
+  }
+
+  function submitForm(event){
+    const semester = document.getElementById("semester").value
+    const subject = document.getElementById('subject').value
+    const resources = document.querySelector(`input[name="resource"]:checked`)?.value;
+    if(!semester || ! subject || !resources){
+      alert("Please Complete all steps");
+      event.preventDefault();   // stop form submit
+      return false;
+    }
+    
+    
+  }
+function loadSubjects(semester){
+    const branch = "FD"
+      fetch(`/get-subjects/${semester}/${branch}/`)  // semester goes into the URL
+    .then(response => response.json())
+    .then(data => {
+        let subjectSelect = document.getElementById("subject");
+        subjectSelect.innerHTML = "<option value=''>-- Select Subject --</option>";
+
+        data.forEach(sub => {
+            subjectSelect.innerHTML += `<option value="${sub}">${sub}</option>`;
+        });
+    });
+ 
+
+
+
+}
+</script>
+</body>
+</html>

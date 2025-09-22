@@ -7,6 +7,8 @@ from django.contrib.auth.decorators import login_required
 from User.models import QuestionPaper, Purchase
 import uuid   # for transaction IDs
 
+
+
 def home (request):
     return render(request, 'home.html')
 def branch (request):
@@ -23,7 +25,31 @@ def EeNotes(request):
     context = {
      'Eefiles': Eefiles,   
     }
-    return render(request, "cse.html", context)
+    return render(request, "ee.html", context)
+def EceNotes(request):
+    Ecefiles = UploadeFiles.objects.filter(branch="ECE", category="NOTES")
+    context = {
+     'Ecefiles': Ecefiles,   
+    }
+    return render(request, "ece.html", context)
+def CivilNotes(request):
+    Cefiles = UploadeFiles.objects.filter(branch="CE", category="NOTES")
+    context = {
+     'Cefiles': Cefiles,   
+    }
+    return render(request, "civil.html", context)
+def FdNotes(request):
+    Fdfiles = UploadeFiles.objects.filter(branch="FD", category="NOTES")
+    context = {
+     'Fdfiles': Fdfiles,   
+    }
+    return render(request, "fd.html", context)
+def MeNotes(request):
+    Mefiles = UploadeFiles.objects.filter(branch="ME", category="NOTES")
+    context = {
+     'Mefiles': Mefiles,   
+    }
+    return render(request, "mechanical.html", context)
 def getFiles (request):
     if request.method == "POST":
         semester = request.POST.get("semester")
@@ -40,13 +66,24 @@ def getFiles (request):
         }
         return render(request, "files.html", context)
 
-def getSubjects (request, semester):
+def getSubjects (request, semester, branch):
     subject = (
-        UploadeFiles.objects.filter(sem = semester)
+        UploadeFiles.objects.filter(branch= branch , sem = semester  )
         .values_list("subject", flat=True)
         .distinct()
      )
     return JsonResponse(list(subject), safe=False)
+
+
+
+
+
+
+
+
+
+
+
 
 # def SelectSemester (request):
 #     if request.method == "POST":

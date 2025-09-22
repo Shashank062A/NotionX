@@ -43,62 +43,41 @@
           </a>
           <ul class="dropdown-menu">
          <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">EE</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ee' %}">Electronics Engineering</a>
+   
     </li>
 
+     <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'me' %}">Mechanical Engineering</a>
+   
+    </li>
 
     <!-- CSE -->
                <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="{% url 'cse' %}">CSE</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'cse' %}">Computer Science Engineering</a>
+  
     </li>
 
     <!-- ECE -->
                <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">ECE</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ece' %}">Electronics & Communication Engineering</a>
+     
     </li>
 
     <!-- CIVIL -->
 
 
        <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">Civil</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'civil' %}">Civil Engineering</a>
+   
     </li>
 
     <!-- FD -->
 
        <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">Fashion Designing</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'fd' %}">Fashion Designing</a>
     </li>
+      
           </ul>
         </li>
       </ul>
@@ -133,279 +112,332 @@
 <p class="text-start " style="font-size: 22px; margin-top: 12px;">Computer engineering started as a specialization of electrical engineering before developing into a new discipline. As initially defined, computer engineering applied aspects of digital logic design from computer science to the creation of microprocessors and technological systems.<br>
   As the field grew, computer engineering continued to adopt design fundamentals and theories from computer science. Computer engineering is distinct from computer science because it focuses on hardware and computer design.</p>
 
-   <h1 style="font-style: Roboto Condensed, sans-serif; font-weight: 700; color: rgb(32, 128, 207);"> Some Career options in computer science</h1>
-  </div>
-<div class="container mt-5">
-  <div class="row justify-content-center g-4">
-
-    <!-- Card 1 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </div>
-  
-
-<div class="container mt-5">
-  <div class="row justify-content-center g-4">
-
-    <!-- Card 1 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-  
-
-
-
-<div class="container mt-5">
-  <div class="row justify-content-center g-4">
-
-    <!-- Card 1 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-  
-
-
-<div class="container mt-5">
-  <div class="row justify-content-center g-4">
-
-    <!-- Card 1 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="col-md-4 col-sm-6 d-flex">
-      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
-        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
-             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
-          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
-        </div>
-        <div class="card-body d-flex flex-column p-4">
-          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-  
-</div>
-
 <div class="container d-flex border rounded flex-column justify-content-center align-items-center mt-4">
 
-    <h1 style="font-style: Roboto Condensed, sans-serif; font-weight: 700; color: rgb(32, 128, 207);">Resources </h1>
+<h1 style="font-style: Roboto Condensed, sans-serif; font-weight: 700; color: rgb(32, 128, 207);"> Some Career options in computer science</h1>
 </div>
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+    
 
-<div class="container d-flex border rounded flex-column justify-content-center align-items-center mt-4 "    style="transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; background-color: #f0ebed;"
-     onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.3)'; this.style.transform='translateY(-5px)';"
-     onmouseout="this.style.boxShadow=''; this.style.transform='';">
-
-  <div id="stepperForm" class="d-flex flex-column justify-content-center align-items-center mt-3 ">
-    <div id="step1" class="step">
-    <h3>Select Semester</h3>
-    <form method="post" action="{% url 'get_files' %}">
-  {% csrf_token %}
-    <select name="semester" id="semester" class="form-select w-100 dropend" onchange="loadSubjects(this.value)" >
-
-         <option value="">-- Select Semester --</option>
-        <option value="1">Semester 1</option>
-        <option value="2">Semester 2</option>
-        <option value="3">Semester 3</option>
-        <option value="4">Semester 4</option>
-        <option value="5">Semester 5</option>
-        <option value="6">Semester 6</option>
-    </select>
-<button type="button" class="btn btn-primary mt-3 w-75 mb-5" onclick="nextStep(2)">Next</button>
-</div>
-
- <div id="step2" class="step d-none">
-      <h3>Select Subject</h3>
-<select name="subject" id="subject" class="form-select w-100">
-        <option value="">-- Select Branch --</option>
-        <!-- Dynamically filled via Django or JS -->
-      </select>
-      <br>
-<button type="button" class="btn btn-secondary mt-3" onclick="prevStep(1)">Back</button>
-<button type="button" class="btn btn-success mt-3" onclick="nextStep(3)">Next</button>
-
-
-    </div>
-
-
-       <!-- Step 3: Resource -->
-    <div id="step3" class="step d-none">
-      <h3>Select Resource Type</h3>
-      <div class="btn-group">
-        <input type="radio" class="btn-check" name="resource" id="notes" value="NOTES" autocomplete="off">
-        <label class="btn btn-outline-primary" for="notes">Notes</label>
-
-        <input type="radio" class="btn-check" name="resource" id="assignment" value="ASSIGNMENT" autocomplete="off">
-        <label class="btn btn-outline-primary" for="assignment">Assignment</label>
-
-        <input type="radio" class="btn-check" name="resource" id="practical" value="PRACTICAL" autocomplete="off">
-        <label class="btn btn-outline-primary" for="practical">Practical</label>
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
+        </div>
       </div>
-      <br>
-<button type="button" class="btn btn-secondary mt-3" onclick="prevStep(2)">Back</button>
-      <button type="submit" class="btn btn-success mt-3" onclick="submitForm(event)">Submit</button>
     </div>
-      <div id="result" class="step d-none">
-      <h3>Results</h3>
-      <div id="resultContent" class="row"></div>
-      <button type ="button" class="btn btn-warning mt-3" onclick="prevStep(3)">Go Back</button>
-      </form>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
+  
+
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
+</div>
+  
+
+
+
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+
+
+<div class="container mt-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #4e54c8, #8f94fb);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;"> 🚀 Software Developer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Software developers are like the architects and builders of the digital world. They're the creative brains behind your favorite apps and websites, using their technical skills to build software applications. .</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #00c6ff, #0072ff);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">💡 Data Science</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processing, scientific visualization, algorithms and systems to extract or extrapolate knowledge from potentially noisy, structured, or unstructured data.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-sm-6 d-flex">
+      <div class="card shadow-lg border-0 rounded-4 flex-fill card-hover">
+        <div class="card-header text-center bg-gradient text-white rounded-top-4" 
+             style="background: linear-gradient(135deg, #ff758c, #ff7eb3);">
+          <h3 class="card-title fw-bold mb-0" style="font-size: 22px; color: black;">⚙️ DevOps Engineer</h3>
+        </div>
+        <div class="card-body d-flex flex-column p-4">
+          <p class="card-text text-muted">DevOps engineers work in between software developers and IT operational staff. It can be used to optimize and improve how organizational work gets done so that software development life cycles are shorter and more effective.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
   
 </div>
 
- <!-- <ul>
-    {% for pdf in Csefiles %}
-        <li>
-            {{ pdf.title }}
-            <a href="{{ pdf.file.url }}" target="_blank">View</a>
-        </li>
-    {% endfor %}
-</ul> -->
-<footer class="bg-dark text-light text-center py-3 mt-5">
-  <div class="container">
-    <p class="mb-0">&copy; 2025 Your Company. All Rights Reserved.</p>
+
+<!-- Resources Section -->
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h1 class="fw-bold" style="font-family: 'Roboto Condensed', sans-serif; color: #2080cf; font-size: 2.5rem;">
+      Resources
+    </h1>
+    <p class="text-muted fs-5">Select your semester, subject, and resource type to access study materials</p>
+  </div>
+
+  <div class="card shadow-lg p-4" style="border-radius: 15px; background-color: #f8f9fa; transition: transform 0.3s, box-shadow 0.3s;" 
+       onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.2)'; this.style.transform='translateY(-5px)';" 
+       onmouseout="this.style.boxShadow=''; this.style.transform='';">
+    
+    <div id="stepperForm" class="d-flex flex-column gap-4">
+
+      <!-- Step 1: Semester -->
+      <div id="step1" class="step">
+        <h3 class="mb-3 fw-semibold">1. Select Semester</h3>
+        <form method="post" action="{% url 'get_files' %}">
+          {% csrf_token %}
+          <select name="semester" id="semester" class="form-select form-select-lg mb-3" onchange="loadSubjects(this.value)">
+            <option value="">-- Select Semester --</option>
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+          </select>
+          <button type="button" class="btn btn-primary w-50 mt-2" onclick="nextStep(2)">Next</button>
+      </div>
+
+      <!-- Step 2: Subject -->
+      <div id="step2" class="step d-none">
+        <h3 class="mb-3 fw-semibold">2. Select Subject</h3>
+        <select name="subject" id="subject" class="form-select form-select-lg mb-3">
+          <option value="">-- Select Subject --</option>
+        </select>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-secondary" onclick="prevStep(1)">Back</button>
+          <button type="button" class="btn btn-success" onclick="nextStep(3)">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Resource Type -->
+<div id="step3" class="step d-none">
+  <h3 class="mb-3 fw-semibold">3. Select Resource Type</h3>
+
+  <div class="d-flex gap-3 justify-content-center mb-3">
+    <div class="form-check form-check-inline">
+      <input type="radio" class="btn-check" name="resource" id="notes" value="NOTES" autocomplete="off" required>
+      <label class="btn btn-outline-primary" for="notes">Notes</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" class="btn-check" name="resource" id="assignment" value="ASSIGNMENT" autocomplete="off">
+      <label class="btn btn-outline-primary" for="assignment">Assignment</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input type="radio" class="btn-check" name="resource" id="practical" value="PRACTICAL" autocomplete="off">
+      <label class="btn btn-outline-primary" for="practical">Practical</label>
+    </div>
+  </div>
+
+  <div class="d-flex gap-2 justify-content-center">
+    <button type="button" class="btn btn-secondary" onclick="prevStep(2)">Back</button>
+    <button type="submit" class="btn btn-success" onclick="submitForm(event)">Submit</button>
+  </div>
+</div>
+
+
+      <!-- Step 4: Results -->
+      <div id="result" class="step d-none">
+        <h3 class="mb-3 fw-semibold">Results</h3>
+        <div id="resultContent" class="row"></div>
+        <button type="button" class="btn btn-warning mt-3" onclick="prevStep(3)">Go Back</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer style="background: #0b3d2e; color: #d4f1e0; padding: 3rem 2rem; font-family: 'Epunda Slab', serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+
+    <!-- Logo + Description -->
+    <div style="flex: 1 1 250px;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem; color: #f5f5f5;">NOTION-X</h2>
+      <p style="color: #d4f1e0; line-height: 1.6;">
+        Your all-in-one academic platform helping students learn smarter, complete assignments faster, and organize study resources effortlessly.
+      </p>
+      <!-- Social icons -->
+      <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Key Features / Highlights -->
+    <div style="flex: 1 1 250px;">
+      <h4 style="margin-bottom: 1rem; font-weight: 700;">Why Choose Notion-X?</h4>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li>📚 Curated Study Material</li>
+        <li>⚡ AI-assisted Learning</li>
+        <li>📝 Assignment Guidance</li>
+        <li>🧠 Smarter Study Tools</li>
+        <li>🌐 Community Support</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex: 1 1 250px;">
+      <h4 style="margin-bottom: 1rem; font-weight: 700;">Contact & Support</h4>
+      <p style="color: #d4f1e0; line-height: 1.6; margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> support@notionx.com</p>
+      <p style="color: #d4f1e0; line-height: 1.6; margin-bottom: 0.5rem;"><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p style="color: #d4f1e0; line-height: 1.6;"><i class="fas fa-map-marker-alt"></i> 123 Learning St, Knowledge City, India</p>
+    </div>
+
+  </div>
+
+  <!-- Footer bottom -->
+  <div style="margin-top: 2rem; border-top: 1px solid #1a5a42; padding-top: 1rem; text-align: center; font-size: 0.9rem; color: #b9e2d1;">
+    &copy; 2025 Notion-X. All Rights Reserved. Designed with ❤️ for students.
   </div>
 </footer>
+
+<!-- Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script>
   function nextStep(step){
     document.querySelectorAll('.step').forEach(s=>s.classList.add("d-none"));
@@ -429,7 +461,8 @@
     
   }
 function loadSubjects(semester){
-      fetch(`/get-subjects/${semester}/`)  // semester goes into the URL
+     const branch = "CSE"
+      fetch(`/get-subjects/${semester}/${branch}/`)   // semester goes into the URL
     .then(response => response.json())
     .then(data => {
         let subjectSelect = document.getElementById("subject");

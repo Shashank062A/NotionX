@@ -1,5 +1,6 @@
 /* hover shadow for branch boxes */
 /* Show dropdown on hover */
+
 .nav-item.dropdown:hover > .dropdown-menu {
     display: block;
     margin-top: 0; /* prevents dropdown jumping */
@@ -33,3 +34,9 @@
   font-size: 0.9rem;
   color: #555;
 }
+
+#about {
+  background-color: black !important;
+  min-height: 200px; /* to see effect */
+}
+

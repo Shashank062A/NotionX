@@ -4,9 +4,11 @@ from django.db import models
 class UploadeFiles(models.Model):
    BRANCH_CHOICES = [
         ('CSE', 'Computer Science'),
-        ('ECE', 'Electronics'),
+        ('ECE', 'Electronics And Communication'),
         ('ME', 'Mechanical'),
+        ('EE', 'Electronics'),
         ('CE', 'Civil'),
+        ('FD', 'Fashion'),
     ]
    SEMESTER_CHOICES = [
         ('1', 'First SEM'),

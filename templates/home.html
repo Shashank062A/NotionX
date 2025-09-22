@@ -2,19 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="m-0 p-0">
+
+<!-- Navbar -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid ">
     <a class="navbar-brand href="#" style="font-family: Epunda Slab, serif; font-optical-sizing: auto;font-weight: 800;font-style: italic;
  ">NOTION-X</a>
@@ -42,61 +45,41 @@
           </a>
           <ul class="dropdown-menu">
          <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">EE</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ee' %}">Electronics Engineering</a>
+   
+    </li>
 
-      </ul>
+     <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="{% url 'me' %}">Mechanical Engineering</a>
+   
     </li>
 
     <!-- CSE -->
                <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="{% url 'cse' %}">CSE</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'cse' %}">Computer Science Engineering</a>
+  
     </li>
 
     <!-- ECE -->
                <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">ECE</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'ece' %}">Electronics & Communication Engineering</a>
+     
     </li>
 
     <!-- CIVIL -->
 
 
        <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">Civil</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'civil' %}">Civil Engineering</a>
+   
     </li>
 
     <!-- FD -->
 
        <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">Fashion Designing</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">1st Year</a></li>
-        <li><a class="dropdown-item" href="#">2nd Year</a></li>
-        <li><a class="dropdown-item" href="#">3rd Year</a></li>
-
-      </ul>
+      <a class="dropdown-item dropdown-toggle" href="{% url 'fd' %}">Fashion Designing</a>
     </li>
+      
           </ul>
         </li>
       </ul>
@@ -104,62 +87,50 @@
   </div>
 </nav>
 
-
-
-<!-- Slider -->
+<!-- Slider (full-width) -->
 <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{% static 'images/brooke-cagle--uHVRvDr7pg-unsplash.jpg' %}" class="d-block w-100 vh-100 z-1"style="object-fit: cover;filter: brightness(50%);" alt="...">
+      <img src="{% static 'images/brooke-cagle--uHVRvDr7pg-unsplash.jpg' %}" class="d-block w-100 vh-100" style="object-fit: cover; filter: brightness(50%);" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h3>Learn from the Best</h3>
-        <h5>Access high-quality notes curated from college toppers to boost your understanding and grades.</h5>
+        <h5>High-quality notes curated from college toppers to boost grades.</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static 'images/premium_photo-1683887033250-25abb485d315.avif' %}" class="d-block w-100 vh-100" style="object-fit: cover;filter: brightness(50%);" alt="...">
+      <img src="{% static 'images/premium_photo-1683887033250-25abb485d315.avif' %}" class="d-block w-100 vh-100" style="object-fit: cover; filter: brightness(50%);" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h3>Complete Your Assignments Faster</h3>
-        <h5>Get ready-to-use assignment solutions and guides that help you save time and learn effectively</h5>
+        <h3>Complete Assignments Faster</h3>
+        <h5>Ready-to-use guides that save time and teach effectively.</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static 'images/next-academy-JyJwO0K5fWM-unsplash.jpg' %}" class="d-block w-100 vh-100" style="object-fit: cover;filter: brightness(50%);" alt="...">      
+      <img src="{% static 'images/next-academy-JyJwO0K5fWM-unsplash.jpg' %}" class="d-block w-100 vh-100" style="object-fit: cover; filter: brightness(50%);" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h3>Hands-On Practical Guidance</h3>
-        <h5>Step-by-step practicals with explanations to help you master experiments and lab work effortlessly</h5>
+        <h5>Step-by-step labs explained for easy learning.</h5>
       </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="carousel-control-next-icon"></span>
   </button>
 </div>
 
+<!-- Branches Section (inside container for alignment) -->
+<div class="container text-center py-5">
+  <h2 class="fw-bold">Academic Branches</h2>
+  <p class="text-muted">Explore notes, study material, and resources for each department.</p>
 
-
-<!-- Branches -->
-<div class="container text-center my-5">
-   <h2 class="fw-bold">Academic Branches</h2>
-     <p class="text-muted">
-    Explore notes, study material, and resources for each department.
-  </p>
-<div class="row align-items-center border rounded p-3 mb-4"
-     style="transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;"
-     onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.3)'; this.style.transform='translateY(-5px)';"
-     onmouseout="this.style.boxShadow=''; this.style.transform='';">
-
-    <!-- Left side: Content -->
+  <!-- Example card -->
+<div class="row align-items-center border rounded p-3 mb-4" 
+       style="transition: box-shadow 0.3s, transform 0.3s;"
+       onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.3)'; this.style.transform='translateY(-5px)';"
+       onmouseout="this.style.boxShadow=''; this.style.transform='';">
+ <!-- Left side: Content -->
     <div class="col-md-6 text-start">
       <h3 class="mt-4">Computer Science Engineering</h3>
       <h6>Computer Science and Engineering is one of the most dynamic and in-demand branches of engineering.</h6>
@@ -194,7 +165,7 @@
       <p class=" text-start">
      EE focuses on electricity, power generation, transmission, and distribution systems. It also covers electronics, control systems, and renewable energy technologies. Electrical engineers work on projects ranging from small electronic devices to large-scale power grids.
       </p>
-      <button class="btn btn-primary  d-block">Learn Now</button>
+      <button class="btn btn-primary  d-block"><a href="{% url 'ee' %}" target="_blank" class="text-white text-decoration-none" >Learn Now</a></button>
     </div>
   </div>
    
@@ -214,7 +185,7 @@
       <p class=" text-start">
   This branch combines electronics, embedded systems, and telecommunication technologies. Students learn about circuits, digital systems, VLSI, wireless communication, and IoT. ECE graduates contribute to innovations in mobile networks, satellites, consumer electronics, and automation.
       </p>
-      <button class="btn btn-primary  d-block">Learn Now</button>
+      <button class="btn btn-primary  d-block"><a href="{% url 'ece' %}" target="_blank" class="text-white text-decoration-none" >Learn Now</a></button>
     </div>
            <!-- Left side: Content -->
     <div class="col-md-6 text-center">
@@ -243,12 +214,40 @@
       <p class=" text-start">
  This branch deals with the design, construction, and maintenance of physical structures like roads, bridges, dams, and buildings. Civil engineers ensure safety, sustainability, and efficiency in infrastructure projects, playing a vital role in urban and rural development.
       </p>
-      <button class="btn btn-primary  d-block">Learn Now</button>
+      <button class="btn btn-primary  d-block"><a href="{% url 'civil' %}" target="_blank" class="text-white text-decoration-none" >Learn Now</a></button>
     </div>
   </div>
    
 </div>
 
+
+
+<!-- Mechanical  -->
+
+ <div class="container text-center my-4">
+  <div class="row align-items-center border rounded shadow p-3" style="transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;"
+     onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.3)'; this.style.transform='translateY(-5px)';"
+     onmouseout="this.style.boxShadow=''; this.style.transform='';">
+ 
+        
+      <!-- Right side: Image -->
+        <div class="col-md-6 text-start">
+      <h3 class="mt-4">Mechanical Engineering</h3>
+      <h6>Mechanical Engineering is Where Motion Meets Mastery.</h6>
+      <p class=" text-start">
+Mechanical engineering is a broad and foundational field of engineering that applies principles of physics, mathematics, and materials science to design, analyze, manufacture, and maintain mechanical systems and devices that involve movement and force
+      </p>
+      <button class="btn btn-primary  d-block"><a href="{% url 'me' %}" target="_blank" class="text-white text-decoration-none" >Learn Now</a></button>
+    </div>
+       <!-- Left side: Content -->
+
+           
+    <div class="col-md-6 text-center">
+      <img src="{% static 'images/me.jpg' %}" class="img-fluid rounded" alt="Sample image">
+    </div>
+  </div>
+   
+</div>
 
 <!-- Fashion Designer -->
    <div class="container text-center my-4">
@@ -257,27 +256,115 @@
      onmouseout="this.style.boxShadow=''; this.style.transform='';">
  
   
-      <!-- Right side: Image -->
+     
+             <!-- Left side: Content -->
+    <div class="col-md-6 text-center">
+      <img src="{% static 'images/fd.jpg' %}" class="img-fluid rounded" alt="Sample image">
+    </div>
+     <!-- Right side: Image -->
         <div class="col-md-6 text-start">
       <h3 class="mt-4">Fashion Designing</h3>
       <h6>Fashion Designing is where creativity meets lifestyle.</h6>
       <p class=" text-start">
 This branch focuses on clothing, textiles, and design principles. Students learn garment construction, fashion illustration, trends, and merchandising. The program nurtures creativity and equips learners to work in fashion houses, textile industries, or as independent designers.
       </p>
-      <button class="btn btn-primary  d-block">Learn Now</button>
-    </div>
-             <!-- Left side: Content -->
-    <div class="col-md-6 text-center">
-      <img src="{% static 'images/fd.jpg' %}" class="img-fluid rounded" alt="Sample image">
+      <button class="btn btn-primary  d-block"><a href="{% url 'fd' %}" target="_blank" class="text-white text-decoration-none" >Learn Now</a></button>
     </div>
   </div>
-   
+  </div>
+
+  <!-- Repeat other branches as needed inside container -->
 </div>
-<footer class="bg-dark text-light text-center py-3 mt-5">
-  <div class="container">
-    <p class="mb-0">&copy; 2025 Your Company. All Rights Reserved.</p>
+ <div class="row align-items-center border rounded shadow p-3 border-black" style="transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;"
+     onmouseover="this.style.boxShadow='0 1rem 2rem rgba(0,0,0,0.3)'; this.style.transform='translateY(-5px)';"
+     onmouseout="this.style.boxShadow=''; this.style.transform='';">
+ 
+  
+        <!-- Right side: Image -->
+        <div class="col-md-4 text-start px-4">
+    <p class="text-uppercase text-muted mb-2" style="letter-spacing: 1px; font-size: 0.9rem;">
+      Unlock Smarter Study
+    </p>
+    <h1 style="
+      font-family: 'Epunda Slab', serif; 
+      font-size: 2.5rem; 
+      line-height: 1.2; 
+      background: linear-gradient(90deg, #1e1c20, #292a2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease-in-out;
+      margin-bottom: 1rem;
+      "
+      onmouseover="this.style.transform='scale(1.03)';"
+      onmouseout="this.style.transform='scale(1)';">
+      Discover Notion-X: Smarter Learning, Faster Growth, Seamless Organization, and All-in-One Academic Support for Every Student
+    </h1>
+    <p class="text-muted fs-5" style="line-height: 1.6;">
+      Notion-X brings you the latest updates to our study platform, with enhanced notes management, AI-assisted learning tools, and more. In 2025, we’ve delivered over 100 improvements to help students access high-quality resources, streamline assignments, and boost learning efficiency.
+    </p>
+  </div>
+              <!-- Left side: Content -->
+      <div class="col-md-7 text-center">
+        <img src="{% static 'images/digital-books.jpg' %}" class="img-fluid rounded" alt="Sample image" >
+      </div>
+    
+  </div>
+
+  </div>
+
+<!-- Footer (full-width) -->
+<!-- Footer -->
+<footer style="background: #0b3d2e; color: #d4f1e0; padding: 3rem 2rem; font-family: 'Epunda Slab', serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem;">
+
+    <!-- Logo + Description -->
+    <div style="flex: 1 1 250px;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem; color: #f5f5f5;">NOTION-X</h2>
+      <p style="color: #d4f1e0; line-height: 1.6;">
+        Your all-in-one academic platform helping students learn smarter, complete assignments faster, and organize study resources effortlessly.
+      </p>
+      <!-- Social icons -->
+      <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color: #d4f1e0; font-size: 1.2rem;"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Key Features / Highlights -->
+    <div style="flex: 1 1 250px;">
+      <h4 style="margin-bottom: 1rem; font-weight: 700;">Why Choose Notion-X?</h4>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li>📚 Curated Study Material</li>
+        <li>⚡ AI-assisted Learning</li>
+        <li>📝 Assignment Guidance</li>
+        <li>🧠 Smarter Study Tools</li>
+        <li>🌐 Community Support</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div style="flex: 1 1 250px;">
+      <h4 style="margin-bottom: 1rem; font-weight: 700;">Contact & Support</h4>
+      <p style="color: #d4f1e0; line-height: 1.6; margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> support@notionx.com</p>
+      <p style="color: #d4f1e0; line-height: 1.6; margin-bottom: 0.5rem;"><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p style="color: #d4f1e0; line-height: 1.6;"><i class="fas fa-map-marker-alt"></i> 123 Learning St, Knowledge City, India</p>
+    </div>
+
+  </div>
+
+  <!-- Footer bottom -->
+  <div style="margin-top: 2rem; border-top: 1px solid #1a5a42; padding-top: 1rem; text-align: center; font-size: 0.9rem; color: #b9e2d1;">
+    &copy; 2025 Notion-X. All Rights Reserved. Designed with ❤️ for students.
   </div>
 </footer>
+
+<!-- Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

@@ -22,10 +22,14 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', views.home, name='home'),
-    path ('cse/', views.CseNotes, name='cse'),
-     path ('ee/', views.EeNotes, name='ee'),
+    path ('cse/Notes', views.CseNotes, name='cse'),
+     path ('civil/Notes', views.CivilNotes, name='civil'),
+     path ('ee/Notes', views.EeNotes, name='ee'),
+     path ('ece/Notes', views.EceNotes, name='ece'),
+     path ('fd/Notes', views.FdNotes, name='fd'),
+     path ('Me/Notes', views.MeNotes, name='me'),
     path ('get_files/', views.getFiles, name = 'get_files'),
-    path('get-subjects/<str:semester>/', views.getSubjects, name='get_subjects'),
+    path('get-subjects/<str:semester>/<str:branch>/', views.getSubjects, name='get_subjects'),
 
 ]
 if settings.DEBUG:
